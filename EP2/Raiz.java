@@ -94,7 +94,7 @@ public class Raiz {
 		// escreva seu código (para testes) aqui
 
 		// Exemplo de teste:
-		double valor = 63;
+		double valor = 1;
 		double precisao = 0.001;
 		System.out.println("Raiz de : "+valor+" = "+raizQuadrada(valor, precisao));
 	}
