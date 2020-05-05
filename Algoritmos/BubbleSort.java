@@ -1,4 +1,4 @@
-class Sort {
+class BubbleSort {
     static int[] bubbleSort(int[] array){
         int[] arrayOrdenado = array;
         int ultimaPosicao = arrayOrdenado.length - 1;

@@ -1,4 +1,4 @@
-class Busca {
+class BuscaBinaria {
 
 static int buscaBinaria(int[] array, int valor){
 	int primeiraPosicao = 0;
