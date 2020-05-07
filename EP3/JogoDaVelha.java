@@ -54,14 +54,20 @@ public class JogoDaVelha {
             for(int j = 0; j < tabuleiro[0].length; j++){
                 if(tabuleiro[i][j] == pecaX) contadores[0]++;
                 else if(tabuleiro[i][j] == pecaY) contadores[1]++;
-                else contadores[2]++;
+                else if(tabuleiro[i][j] == espacoVazio) contadores[2]++;
             }
             /* 
                 Após a checagem de cada linha é verificado se o número necessário
                 de peças em sequência foi atingido                   
             */
-            if(contadores[0] == 3) status = 1;
-            else if(contadores[1] == 3) status = 2;
+            if(contadores[0] == 3) {
+                status = 1;
+                break;
+            }
+            else if(contadores[1] == 3) {
+                status = 2;
+                break;
+            }
         }
 
         if(status != 1 && status != 2){
@@ -80,8 +86,14 @@ public class JogoDaVelha {
                     Após a checagem de cada coluna é verificado se o número necessário
                     de peças em sequência foi atingido                   
                 */
-                if(contadores[0] == 3) status = 1;
-                else if(contadores[1] == 3) status = 2; 
+                if(contadores[0] == 3) {
+                    status = 1;
+                    break;
+                }
+                else if(contadores[1] == 3) {
+                    status = 2;
+                    break;
+                } 
             }
 
             if(status !=1 && status != 2) {
@@ -163,7 +175,7 @@ public class JogoDaVelha {
 
 		char[][] tab0 = {{' ',' ',' '},{' ',' ',' '},{' ',' ',' '}};
 		char[][] tab1 = {{'X','O','X'},{'O','O',' '},{'X','X','X'}};
-		char[][] tab2 = {{'O','X','O'},{'X','O','O'},{'O',' ','O'}};
+		char[][] tab2 = {{'X','X','O'},{'X','O','O'},{'O',' ','O'}};
 		char[][] tab3 = {{'O','X','X'},{'X','O','O'},{'O','X','X'}};
 		char[][] tab4 = {{' ',' ',' '},{'X','O','X'},{' ',' ',' '}};
 
