@@ -1,13 +1,13 @@
 /*********************************************************************/
 /**   ACH2001 - Introdução à Programação                            **/
 /**   EACH-USP - Primeiro Semestre de 2020                          **/
-/**   <turma> - <nome do professor>                                 **/
+/**   2020102 - Luciano Digiampetri                                 **/
 /**                                                                 **/
 /**   Quarto Exercício-Programa                                     **/
 /**                                                                 **/
-/**   <nome do(a) aluno(a)>                   <número USP>          **/
+/**   Matheus Moreira da Silva                  11796490            **/
 /**                                                                 **/
-/**   <data de entrega>                                             **/
+/**   02/06/2020                                                    **/
 /*********************************************************************/
 
 public class Banco {
